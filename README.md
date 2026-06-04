@@ -57,13 +57,13 @@ Flowchart (high-level):
 
 ```mermaid
 flowchart TD
-	A[Start: Simulation config] --> B[Generate synthetic features X]
-	B --> C[Compute potential outcomes Y(0), Y(1), Y(2)]
-	C --> D[Randomize into arms: Sham / tVNS / NF]
-	D --> E[Fit learners (S, T, X) with 5-fold CV]
-	E --> F[Aggregate OOF ITE predictions]
-	F --> G[Compute metrics & robustness checks]
-	G --> H[Outputs: CSV tables, SHAP, figures]
+  A["Start: Simulation config"] --> B["Generate synthetic features X"]
+  B --> C["Compute potential outcomes Y(0), Y(1), Y(2)"]
+  C --> D["Randomize into arms: Sham / tVNS / NF"]
+  D --> E["Fit learners (S, T, X) with 5-fold CV"]
+  E --> F["Aggregate OOF ITE predictions"]
+  F --> G["Compute metrics & robustness checks"]
+  G --> H["Outputs: CSV tables, SHAP, figures"]
 ```
 
 Sequence (data → decision):
